@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5452ce18-7b59-4ef8-afd5-689e22cf9829" name="Default Changelist" comment="" />
+    <list default="true" id="5452ce18-7b59-4ef8-afd5-689e22cf9829" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/image/slice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SRCNN/SRCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/SRCNN/SRCNN.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SRCNN/SRCNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
+            <state relative-caret-position="621">
+              <caret line="70" column="44" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -56,7 +61,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/SRCNN" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -70,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="335" />
     <option name="y" value="650" />
     <option name="width" value="3165" />
@@ -82,17 +87,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="SRCNN" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,6 +105,24 @@
               <item name="res" type="462c0819:PsiDirectoryNode" />
               <item name="image" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SRCNN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SRCNN" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+              <item name="120x80" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="SRCNN" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -122,7 +134,7 @@
     <property name="last_opened_file_path" value="D:/Software/Anaconda3/python.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -156,9 +168,6 @@
       <module name="SRCNN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/SRCNN" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -274,11 +283,12 @@
       <workItem from="1551900457474" duration="2427000" />
       <workItem from="1551941281817" duration="12645000" />
       <workItem from="1551958312794" duration="190000" />
+      <workItem from="1552044245984" duration="1635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46193000" />
+    <option name="totallyTimeSpent" value="47828000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -291,12 +301,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47657296" visible="true" weight="0.13931681" />
-      <window_info id="Structure" order="1" sideWeight="0.52342707" side_tool="true" visible="true" weight="0.13931681" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47523427" visible="true" weight="0.14132619" />
+      <window_info id="Structure" order="1" sideWeight="0.52476573" side_tool="true" visible="true" weight="0.14132619" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.328877" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32797858" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.328877" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39973262" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -314,11 +325,16 @@
       <window_info anchor="right" id="SciView" order="3" sideWeight="0.4986631" weight="0.32886806" />
       <window_info anchor="right" id="Database" order="4" sideWeight="0.49601594" weight="0.32953784" />
       <window_info anchor="right" id="Python Console" order="5" side_tool="true" weight="0.33824515" />
-      <window_info anchor="right" x="0" y="0" width="337" height="677" id="Documentation" order="6" sideWeight="0.50398403" side_tool="true" visible="true" weight="0.32953784" />
+      <window_info anchor="right" x="0" y="0" width="337" height="677" id="Documentation" order="6" sideWeight="0.50398403" side_tool="true" weight="0.32953784" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/SRCNN" />
+    </ignored-roots>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/h.py" />
@@ -362,20 +378,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/image/i1.png" />
+    <entry file="file://$PROJECT_DIR$/res/image/i2.png" />
     <entry file="file://$PROJECT_DIR$/res/image/120x80/120x80 (1).png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/res/image/480x320/480x320 (1).png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/image/i2.png" />
     <entry file="file://$PROJECT_DIR$/res/image/slice.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SRCNN/SRCNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
+        <state relative-caret-position="621">
+          <caret line="70" column="44" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
