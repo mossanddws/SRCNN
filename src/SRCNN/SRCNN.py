@@ -18,7 +18,7 @@ def nearest_neighbor_interpolation(input_img, destination_height, destination_wi
 
 input_x = np.zeros((0, 33, 33, 3))
 input_y = np.zeros((0, 21, 21, 3))
-for num in range(1, 6):
+for num in range(1, 66):
     # import picture and change to an array.
     image_path = '../../res/image/120x80/120x80 (' + str(num) + ').png'
     input_image = Image.open(image_path)
@@ -52,31 +52,31 @@ for num in range(1, 6):
                                                            480 - 33:480]
     input_x = np.append(arr=input_x, values=input_data, axis=0)
 
-    # use the same way to cut real picture to 33*33 px fragments as the input labels.
+    # use the same way to cut real picture to 33*33 px fragments (but only use the core 21*21 px fragments)
+    # as the input labels.
     image_path = '../../res/image/480x320/480x320 (' + str(num) + ').png'
     input_image = Image.open(image_path)
     input_image_array = np.array(input_image)
-    image_low_resolution = nearest_neighbor_interpolation(input_image_array, input_image_array.shape[0] * 4,
-                                                          input_image_array.shape[1] * 4)
+    image_high_resolution = input_image_array
     input_label = np.zeros((150, 21, 21, 3))
     for height in range(0, 10):
         for weight in range(0, 15):
             if height < 9:
                 if weight < 14:
-                    input_label[height * 10 + weight] = image_low_resolution[
+                    input_label[height * 10 + weight] = image_high_resolution[
                                                         height * 33 + 6:(height + 1) * 33 - 6,
                                                         weight * 33 + 6:(weight + 1) * 33 - 6]
                 else:
-                    input_label[height * 10 + weight + 1] = image_low_resolution[
+                    input_label[height * 10 + weight + 1] = image_high_resolution[
                                                             height * 33 + 6:(height + 1) * 33 - 6,
                                                             480 - 33 + 6:480 - 6]
             else:
                 if weight < 14:
-                    input_label[height * 10 + weight + 1] = image_low_resolution[
+                    input_label[height * 10 + weight + 1] = image_high_resolution[
                                                             320 - 33 + 6:320 - 6,
                                                             weight * 33 + 6:(weight + 1) * 33 - 6]
                 else:
-                    input_label[height * 10 + weight + 1] = image_low_resolution[
+                    input_label[height * 10 + weight + 1] = image_high_resolution[
                                                             320 - 33 + 6:320 - 6,
                                                             480 - 33 + 6:480 - 6]
     input_y = np.append(arr=input_y, values=input_label, axis=0)
@@ -93,7 +93,15 @@ model.add(Conv2D(32, (1, 1), data_format='channels_last', activation='relu'))
 model.add(Conv2D(3, (5, 5), data_format='channels_last', activation='linear'))
 
 # the loss function is MSE, the optimizer is SGD.
-model.compile(loss='mean_squared_error', optimizer='sgd')
+model.compile(loss='mean_squared_error', optimizer='adam')
 
 # input data and labels, just only train one time.
-model.fit(x=input_x[0:450], y=input_y[0:450], validation_data=[input_x[450:], input_y[450:]], batch_size=150, epochs=2)
+number = 60
+model.fit(x=input_x[0:150 * number],
+          y=input_y[0:150 * number],
+          validation_data=[input_x[150 * number:],
+                           input_y[150 * number:]],
+          batch_size=150,
+          epochs=100)
+
+model.save('../../save/srcnn_model_v1.h5')
