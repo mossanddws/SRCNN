@@ -18,7 +18,7 @@ def nearest_neighbor_interpolation(input_img, destination_height, destination_wi
 
 input_x = np.zeros((0, 33, 33, 3))
 input_y = np.zeros((0, 21, 21, 3))
-for num in range(1, 6):
+for num in range(1, 66):
     # import picture and change to an array.
     image_path = '../../res/image/120x80/120x80 (' + str(num) + ').png'
     input_image = Image.open(image_path)
@@ -96,4 +96,5 @@ model.add(Conv2D(3, (5, 5), data_format='channels_last', activation='linear'))
 model.compile(loss='mean_squared_error', optimizer='sgd')
 
 # input data and labels, just only train one time.
-model.fit(x=input_x[0:450], y=input_y[0:450], validation_data=[input_x[450:], input_y[450:]], batch_size=150, epochs=2)
+model.fit(x=input_x, y=input_y, batch_size=150, epochs=10)
+print(model.summary())
