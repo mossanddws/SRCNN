@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5452ce18-7b59-4ef8-afd5-689e22cf9829" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/SRCNN/SRCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/SRCNN/SRCNN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SRCNN/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/SRCNN/temp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/array.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,13 +35,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SRCNN/SRCNN.py">
+        <entry file="file://$PROJECT_DIR$/src/SRCNN/temp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -70,14 +70,14 @@
         <option value="$PROJECT_DIR$/Pipfile" />
         <option value="$PROJECT_DIR$/src/loading/loading.py" />
         <option value="$PROJECT_DIR$/src/array/array.py" />
-        <option value="$PROJECT_DIR$/src/SRCNN/temp.py" />
         <option value="$PROJECT_DIR$/src/SRCNN/SRCNN.py" />
+        <option value="$PROJECT_DIR$/src/SRCNN/temp.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-15" />
-    <option name="width" value="1948" />
+    <option name="width" value="1950" />
     <option name="height" value="2175" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -86,17 +86,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="SRCNN" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,13 +113,18 @@
               <item name="SRCNN" type="b2602c69:ProjectViewProjectNode" />
               <item name="SRCNN" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="array" type="462c0819:PsiDirectoryNode" />
+              <item name="SRCNN" type="462c0819:PsiDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
             <path>
-              <item name="SRCNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SRCNN" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SRCNN" type="462c0819:PsiDirectoryNode" />
+              <item name="SRCNN" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -176,11 +170,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SRCNN">
+  <component name="RunManager" selected="Python.temp">
     <configuration name="SRCNN" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="SRCNN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/SRCNN" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -283,8 +280,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.SRCNN" />
         <item itemvalue="Python.temp" />
+        <item itemvalue="Python.SRCNN" />
         <item itemvalue="Python.array" />
       </list>
     </recent_temporary>
@@ -322,12 +319,15 @@
       <workItem from="1553940599840" duration="18000" />
       <workItem from="1553940674022" duration="3871000" />
       <workItem from="1553965511519" duration="13429000" />
-      <workItem from="1553979420303" duration="4392000" />
+      <workItem from="1553979420303" duration="4983000" />
+      <workItem from="1554119896131" duration="368000" />
+      <workItem from="1554625223186" duration="9000" />
+      <workItem from="1554625265453" duration="2905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70434000" />
+    <option name="totallyTimeSpent" value="74307000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -341,8 +341,8 @@
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="877" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46720216" visible="true" weight="0.18888144" />
-      <window_info id="Structure" order="1" sideWeight="0.5327979" side_tool="true" visible="true" weight="0.18888144" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4631861" visible="true" weight="0.19691895" />
+      <window_info id="Structure" order="1" sideWeight="0.5368139" side_tool="true" visible="true" weight="0.19691895" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32797858" />
@@ -362,7 +362,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" sideWeight="0.4986631" weight="0.32886806" />
       <window_info anchor="right" id="Database" order="4" sideWeight="0.49601594" weight="0.32953784" />
-      <window_info active="true" anchor="right" id="Python Console" order="5" side_tool="true" visible="true" weight="0.48827863" />
+      <window_info anchor="right" id="Python Console" order="5" side_tool="true" visible="true" weight="0.48827863" />
       <window_info anchor="right" x="0" y="0" width="337" height="677" id="Documentation" order="6" sideWeight="0.50398403" side_tool="true" weight="0.32953784" />
     </layout>
   </component>
@@ -424,13 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/array/array.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/SRCNN-V0yxY5xj/Lib/site-packages/numpy/lib/function_base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -444,16 +437,27 @@
     <entry file="file://$PROJECT_DIR$/res/image/120x80/120x80 (1).png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SRCNN/temp.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/array/array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SRCNN/SRCNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        <state>
+          <caret selection-end-column="18" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SRCNN/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
